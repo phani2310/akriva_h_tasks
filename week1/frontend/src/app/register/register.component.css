@@ -1,0 +1,109 @@
+/* General page styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    height: 100vh;
+    /* Full viewport height */
+}
+
+/* Register container styles */
+.register-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    /* Limit the maximum width */
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect width */
+    text-align: center;
+    /* Center the text inside the container */
+}
+
+/* Register title */
+.register-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Register message styles */
+.register-message {
+    color: #f44336;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Form styles */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Space between input fields */
+}
+
+/* Input container styles */
+.input-container {
+    margin-bottom: 15px;
+}
+
+/* Label styles */
+.label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input field styles */
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Focused input field styles */
+.input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit button styles */
+.submit-button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Hover effect for the submit button */
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    .register-container {
+        padding: 20px;
+    }
+
+    .register-title {
+        font-size: 20px;
+    }
+}

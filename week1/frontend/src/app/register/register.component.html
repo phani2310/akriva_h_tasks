@@ -1,0 +1,21 @@
+<div class="register-container">
+    <h2 class="register-title">Register</h2>
+
+    <form (ngSubmit)="register()" class="register-form">
+        <div class="input-container">
+            <label for="name" class="label">Username</label>
+            <input type="text" [(ngModel)]="name" name="name" id="name" class="input" placeholder="Enter your name"
+                required />
+        </div>
+
+        <div class="input-container">
+            <label for="pass" class="label">Password</label>
+            <input type="password" [(ngModel)]="pass" name="pass" id="pass" class="input"
+                placeholder="Enter your password" required />
+        </div>
+
+        <button type="submit" class="submit-button">Register</button>
+    </form>
+
+    <p class="register-message">{{ registerMessage }}</p>
+</div>

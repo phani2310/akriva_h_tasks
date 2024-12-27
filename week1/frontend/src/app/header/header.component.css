@@ -1,0 +1,48 @@
+/* General styling for the navbar */
+.navbar {
+    background-color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: flex-end;
+    /* Align the buttons to the right */
+    align-items: center;
+    /* Vertically align the buttons */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1200px;
+    /* Limit the width of the header */
+    margin: 0 auto;
+    /* Center the navbar */
+}
+
+/* Button styling for login/register */
+.nav-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+    /* Space between the buttons */
+}
+
+/* Hover effect for the buttons */
+.nav-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .nav-button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}

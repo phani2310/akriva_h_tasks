@@ -1,0 +1,114 @@
+/* General page styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    height: 100vh;
+    /* Full viewport height */
+}
+
+/* Header styles */
+.login-header {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Login container styles */
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    /* Limit the maximum width */
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect width */
+}
+
+/* Login title */
+.login-title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Message styles */
+.login-message {
+    color: #f44336;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form styles */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input container styles */
+.input-container {
+    margin-bottom: 15px;
+}
+
+/* Label styles */
+.label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input field styles */
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Focused input field styles */
+.input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit button styles */
+.submit-button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Hover effect for the submit button */
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-title {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,23 @@
+<!-- <p class="login-header">Login works!</p> -->
+<div class="login-container">
+    <h2 class="login-title">Login</h2>
+
+    <div *ngIf="loginMessage" class="login-message">
+        {{ loginMessage }}
+    </div>
+
+    <form (ngSubmit)="login()" class="login-form">
+        <div class="input-container">
+            <label for="name" class="label">Username</label>
+            <input [(ngModel)]="name" id="name" type="text" placeholder="Enter your username" name="name" class="input"
+                required />
+        </div>
+        <div class="input-container">
+            <label for="pass" class="label">Password</label>
+            <input [(ngModel)]="pass" id="pass" type="password" placeholder="Enter your password" name="pass"
+                class="input" required />
+        </div>
+
+        <button type="submit" class="submit-button">Login</button>
+    </form>
+</div>
